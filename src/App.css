@@ -1,10 +1,10 @@
 
 .sunny-theme {
   --mainColor: #23e8c1;
-  --bg-color: #ee6868;
+  --bg-color: #ffffff;
   --primary-color: #000000;
   --black: #000000;
-  --card-bg : #f5f3f385; 
+  --card-bg : #f5f3f3; 
 
 }
 .night-theme {
@@ -58,7 +58,11 @@ video {
   align-items: center;
   justify-content: center;
 }
-
+.rain{
+  color: red;
+  background-color: red;
+  visibility: hidden;
+}
 .main {
   width: 60%;
   margin: auto;

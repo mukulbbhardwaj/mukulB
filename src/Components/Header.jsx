@@ -32,7 +32,7 @@ function Header() {
 
   return (
     <div>
-      <ReactRain numDrops="50" />
+     
       <div className="main">
         <div className="navbar">
           <div className="logo strong-font">
@@ -64,12 +64,12 @@ function Header() {
         <button id="night" onClick={() => toggleNight()}>
           <img src={night} alt="" />
         </button>
-        <button id="rain" onClick={() => toggleRainy()}>
+        {/* <button id="rain" onClick={() => toggleRainy()}>
           <img src={rain} alt="" />
         </button>
         <button id="winds" onClick={() => toggleWindy()}>
           <img src={winds} alt="" />
-        </button>
+        </button> */}
       </div>
     </div>
   );
