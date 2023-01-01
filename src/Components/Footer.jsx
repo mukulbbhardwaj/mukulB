@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import github from "../asset/github.png";
 import linkedin from "../asset/linkedin.png";
 import twitter from "../asset/twitter.png";
 import gmail from "../asset/mail.png";
 
+
+
+
+
+
+
 function Footer() {
+  //function for dark-light mode icon
+
+
   return (
     <div>
       <hr className="linebreak" />

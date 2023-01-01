@@ -1,10 +1,8 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useRef ,useState, Component } from "react";
 import sunny from "../asset/sun.png";
-import rain from "../asset/rain.png";
 import night from "../asset/night.png";
-import winds from "../asset/wind.png";
-// import rain_bg from "../asset/Rain-bg.mp4";
-import ReactRain from 'react-rain-animation';
+// import rain from "../asset/rain.png";
+// import winds from "../asset/wind.png";
 import "react-rain-animation/lib/style.css";
 
 
@@ -29,6 +27,9 @@ function Header() {
   const toggleWindy = () => {
     setTheme("windy-theme");
   };
+  // console.log(theme);
+
+  
 
   return (
     <div>
@@ -71,6 +72,7 @@ function Header() {
           <img src={winds} alt="" />
         </button> */}
       </div>
+    
     </div>
   );
 }

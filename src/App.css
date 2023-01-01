@@ -30,39 +30,7 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-video {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
 
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.video-wrapper {
-  /* Telling our absolute positioned video to 
-  be relative to this element */
-  position: relative;
-
-  width: 400px;
-  height: 200px;
-
-  /* Will not allow the video to overflow the 
-  container */
-  overflow: hidden;
-
-  /* Centering the container's content vertically 
-  and horizontally */
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rain{
-  color: red;
-  background-color: red;
-  visibility: hidden;
-}
 .main {
   width: 60%;
   margin: auto;
@@ -78,6 +46,7 @@ video {
   display: flex;
   justify-content: space-between;
   margin-top: 3.5rem;
+  height: 50px;
   /* font-weight: 300; */
 }
 .nav-item {
@@ -367,13 +336,20 @@ background: none;
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    height: 100px;
+      /* border: 2px solid red; */
+  }
+  .headerLinkContainer{
+      /* border: 2px solid red; */
+      height: 50px;
   }
   .logo{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   .nav-item{
     /* margin: 0px 1px 2px 3px; */
     background-position: 0 80%;
+  
   }
   .pfp{
     margin-top: 4rem;
@@ -446,11 +422,11 @@ background: none;
     width: 55%;
   }
   .sub-heading{
-    font-size: 2rem;
+    font-size: 1.6rem;
     height: 3rem;
   }
   .heading{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     padding: 10px;
   }
