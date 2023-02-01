@@ -9,7 +9,7 @@ import "react-rain-animation/lib/style.css";
 
 
 function Header() {
-  const [theme, setTheme] = useState("night-theme");
+  const [theme, setTheme] = useState("sunny-theme");
 
   useEffect(() => {
     document.body.className = theme;
