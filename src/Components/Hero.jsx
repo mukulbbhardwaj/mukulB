@@ -68,10 +68,10 @@ function Hero() {
               </div>
             </div>
             <div className="link-container">
-              <a className="live" href="https://weather-app-monke.netlify.app/" target="_blank">
+              <a className="live btn" href="https://weather-app-monke.netlify.app/" target="_blank">
                 Live
               </a>
-              <a className="code"
+              <a className="code btn"
                 href="https://github.com/mukulbbhardwaj/Weather--React"
                 target="_blank"
               >
