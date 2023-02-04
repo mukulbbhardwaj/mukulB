@@ -5,7 +5,7 @@ import night from "../asset/night.png";
 // import winds from "../asset/wind.png";
 import github from "../asset/github.png";
 import linkedin from "../asset/linkedin.png";
-import twitter from "../asset/twitter.png";
+// import twitter from "../asset/twitter.png";
 import gmail from "../asset/mail.png";
 import leetcode from "../asset/leetcode.png";
 
@@ -57,17 +57,19 @@ function Header() {
         </div>
       </div>
       <div className="link-array">
-        <a href="https://github.com/mukulbbhardwaj">
+        <a href="https://github.com/mukulbbhardwaj" target="_blank">
           <img src={github} alt="" />
         </a>
-        <a href="https://www.linkedin.com/in/mukulbbhardwaj/">
+        <a href="https://www.linkedin.com/in/mukulbbhardwaj/" target="_blank">
           <img src={linkedin} alt="" />
         </a>
-        <a href=""><img src={leetcode} alt="" /></a>
-        <a href="https://twitter.com/mukulbbhardwaj">
-          <img src={twitter} alt="" />
+        <a href="https://leetcode.com/mukulbbhardwaj/" target="_blank">
+          <img src={leetcode} alt="" />
         </a>
-        <a href="mailto:mukulbhardwaj73@gmail.com">
+        {/* <a href="https://twitter.com/mukulbbhardwaj" target="_blank">
+          <img src={twitter} alt="" />
+        </a> */}
+        <a href="mailto:mukulbhardwaj73@gmail.com" target="_blank">
           <img src={gmail} alt="" />
         </a>
       </div>
