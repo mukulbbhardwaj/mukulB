@@ -536,11 +536,11 @@ background-color: var(--card-bg);
     width: 55%;
   }
   .sub-heading {
-    font-size: 30px;
+    font-size: 24px;
     height: 3rem;
   }
   .heading {
-    font-size: 48px; 
+    font-size: 44px; 
     writing-mode: horizontal-tb;
     transform: none;
     padding: 10px;
