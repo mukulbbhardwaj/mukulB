@@ -3,8 +3,8 @@ import logo from "../asset/mb-logo.png";
 import monkepod from "../asset/figma.png";
 // import ramsetu from "../asset/figma.png";
 import muno from "../asset/muno.gif";
-import tictactoe from "../asset/tictactoe.gif"
-
+import tictactoe from "../asset/tictactoe.gif";
+import weather from "../asset/weather.png"
 
 function Hero() {
   return (
@@ -27,7 +27,7 @@ function Hero() {
       <div className="tech-container">
         <h1 className="heading">Technologies</h1>
         <div className="tech-info">
-          <div className="fe">
+          <div className="fe tech-container-item">
             <h1 className="sub-heading">Frontend</h1>
             <div className="fe-item">
               <div className="tech-icon">HTML</div>
@@ -36,14 +36,17 @@ function Hero() {
               <div className="tech-icon">ReactJS</div>
             </div>
           </div>
-          <div className="be">
+          <div className="be tech-container-item">
             <h1 className="sub-heading">Backend</h1>
             <div className="tech-icon">NodeJs</div>
           </div>
-          <div className="tools">
+          <div className="tools tech-container-item">
             <h1 className="sub-heading">Tools</h1>
-            <div className="tools-item"> <div className="tech-icon">Figma</div>
-            <div className="tech-icon">Git</div></div>
+            <div className="tools-item">
+              {" "}
+              <div className="tech-icon">Figma</div>
+              <div className="tech-icon">Git</div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,75 +54,32 @@ function Hero() {
       <div id="projects" className="projects">
         <h1 className="heading">Projects</h1>
         <div className="project-container">
-          <div className="project-item">
+          <div className="project-item p1">
             <div className="project-icon">
-              <img src={monkepod} alt="" />
+              <img src={weather} alt="" />
             </div>
             <div className="project-info">
-              <div className="title sub-heading">MonkePod</div>
               <div className="details">
-                <p>A custom music player build in ReactJs.</p>
-                <div className="link-container">
-                  <a href="" target="_blank">
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/mukulbbhardwaj/MonkePod"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project-item">
-            <div className="project-icon">
-              <img src={muno} alt="" />
-            </div>
-            <div className="project-info">
-              <div className="title sub-heading">MUNO</div>
-              <div className="details">
-                <p>Card game</p>
-                <div className="link-container">
-                  <a href="" target="_blank">
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/mukulbbhardwaj/MUNO"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project-item">
-            <div className="project-icon">
-              <img src={tictactoe} alt="" />
-            </div>
-            <div className="project-info">
-              <div className="title sub-heading">TicTacToe</div>
-              <div className="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur, quasi!
+                <div className="title sub-heading-small">Weather</div>
+                <p className="description">
+                  A general purpose weather app with basic information with
+                  search option.
                 </p>
-                <div className="link-container">
-                  <a href="" target="_blank">
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/mukulbbhardwaj/Tic-Tac-Toe"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </div>
               </div>
             </div>
+            <div className="link-container">
+              <a className="live" href="https://weather-app-monke.netlify.app/" target="_blank">
+                Live
+              </a>
+              <a className="code"
+                href="https://github.com/mukulbbhardwaj/Weather--React"
+                target="_blank"
+              >
+                Code
+              </a>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>

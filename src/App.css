@@ -1,19 +1,16 @@
-
 .sunny-theme {
   --mainColor: #23e8c1;
   --bg-color: #ffffff;
   --primary-color: #000000;
   --black: #000000;
-  --card-bg : #f5f3f3; 
-
+  --card-bg: #f5f3f3;
 }
 .night-theme {
   --mainColor: #20f3c5;
   --bg-color: #000000;
   --primary-color: #ffffff;
-  --black: #000000; 
-   --card-bg : #171717; 
-  
+  --black: #000000;
+  --card-bg: #171717;
 }
 
 * {
@@ -22,7 +19,7 @@
   line-height: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   text-align: center;
   background-color: var(--bg-color);
   color: var(--primary-color);
@@ -36,7 +33,7 @@
 }
 
 /* HEADER CSS START*/
-.logo{
+.logo {
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--primary-color);
@@ -108,19 +105,26 @@ p {
   font-weight: 600;
 }
 
-.heading{
-  font-size: 6rem;
+.heading {
+  font-size: 100px;
   line-height: 1.2;
   white-space: nowrap;
   transform: rotate(180deg);
   padding: 10px;
   writing-mode: vertical-lr;
-
 }
-.sub-heading{
-  font-size: 1.2rem;
+.sub-heading {
+  font-size: 50px;
+  line-height: 1;
+  padding: 10px;
+  width: fit-content;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--mainColor) 0, var(--mainColor));
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
 }
-.tech-container{
+.tech-container {
   margin: 8rem;
   box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
   border: 2px solid #fff;
@@ -128,10 +132,8 @@ p {
   border-radius: 1rem;
   display: flex;
   justify-content: center;
-
-  
 }
-.tech-info{
+.tech-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -143,35 +145,29 @@ p {
   margin: 1rem;
   box-shadow: 0 1px 3px rgb(0 0 0 / 100%);
   border: 2px solid #fff;
-  filter: brightness(0.9);
+  /* filter: brightness(0.9); */
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   padding: 10px;
-  font-weight: 500;
- 
+  font-weight: 800;
+  color: rgb(6, 155, 210);
 }
 
-.fe-item{
+.fe-item {
   display: flex;
- 
 }
-.be{
+.tech-container-item {
   display: flex;
   flex-direction: column;
-    justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
-.tools-item{
+.tools-item {
   display: flex;
   justify-content: center;
 }
-.tools{
-  justify-content: center;
-  align-items: center;
-}
 
-.projects{
+.projects {
   margin: 8rem;
   box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
   border: 2px solid #fff;
@@ -179,14 +175,12 @@ p {
   border-radius: 1rem;
   display: flex;
   justify-content: center;
-
 }
-.project-container{
-  
+.project-container {
 }
 
-.project-item{
-margin: 2rem;
+.project-item {
+  margin: 2rem;
   box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
   border: 2px solid #fff;
   filter: brightness(0.9);
@@ -194,32 +188,66 @@ margin: 2rem;
   display: flex;
   justify-content: center;
 }
-
-.project-icon img{ 
-
-width: 10rem;
-height: 10rem;
+.project-icon{
+  padding: 10px;
+  margin: 10px;
+}
+.project-icon img {
+  width: 10rem; 
+  height: 10rem;
+  margin: 1rem;
+  border: 1px solid var(--mainColor);
+  border-radius: 50%;
+  padding: 10px;
+;
+ 
+}
+.project-info {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+}
+.link-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
 margin: 1rem;
+font-weight: 800;
 
 }
-.project-info{
-
-  width: 24rem;
-  margin-left: 1.6rem;
-
+.description{
+  width: 200px;
+  text-align: start;
 }
 .link-container a{
-text-decoration: none;
-margin-left: 1rem;
-border: 2px solid red;
-border-radius: 9px;
+  text-decoration: none;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 0.8rem;
+  padding: 0.2rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 100%);
 }
-
-
+.sub-heading-small {
+  font-size: 30px;
+  line-height: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: fit-content;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--mainColor) 0, var(--mainColor));
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+}
+.code{
+  color: green;
+}
+.live{
+  color: red;
+}
 /* HERO CSS END */
-
-
-
 
 /* */
 /*  */
@@ -228,48 +256,44 @@ border-radius: 9px;
 /*  */
 /*  */
 
-
-
-
 /* FOOTER CSS START */
 .mainFooter {
   display: flex;
   justify-content: space-around;
   margin-top: 1.8rem;
-  }
+}
 .socialLinks {
   display: flex;
   margin: 0rem 1.1rem 0rem 0rem;
 }
 .link {
   text-decoration: none;
-margin: 1rem;
-list-style: none;
+  margin: 1rem;
+  list-style: none;
 }
-.credits{
+.credits {
   margin: 1rem;
 }
-.link img{
-width: 1.6rem;
+.link img {
+  width: 1.6rem;
 }
 /* FOOTER CSS END */
 
-
-.linebreak{
+.linebreak {
   width: 80%;
 }
-.linebreak-1{
+.linebreak-1 {
   width: 80%;
 }
-.center{
+.center {
   text-align: center;
   align-items: center;
 }
 /*  */
 
 /*  */
-.link-array{
-   float: left;
+.link-array {
+  float: left;
   display: flex;
   flex-direction: column;
   border: 2px solid var(--card-bg);
@@ -280,14 +304,14 @@ width: 1.6rem;
   position: fixed;
   left: 3%;
 }
-.link-array img{
-   width: 45px;
+.link-array img {
+  width: 45px;
   height: auto;
   padding: 1px;
-   margin: 0.2rem;
+  margin: 0.2rem;
 }
 
-.button-array{
+.button-array {
   float: right;
   display: flex;
   flex-direction: column;
@@ -298,29 +322,27 @@ width: 1.6rem;
   padding: 10px;
   position: fixed;
   right: 3%;
-
 }
-.button-array button{
+.button-array button {
   margin: 0.2rem;
   /* width: 10px; */
-padding: 1px;
-border: none;
-background: none;
-
+  padding: 1px;
+  border: none;
+  background: none;
 }
 .button-array button img {
   width: 45px;
   height: auto;
 }
-.tooltip{
-    position: relative;
+.tooltip {
+  position: relative;
   display: inline-block;
 }
-.tooltip:hover .tooltip-text{
+.tooltip:hover .tooltip-text {
   visibility: visible;
 }
-.tooltip-text{
-visibility: hidden;
+.tooltip-text {
+  visibility: hidden;
   width: 120px;
   background-color: black;
   color: #fff;
@@ -340,24 +362,22 @@ visibility: hidden;
 /*  */
 /* CSS For Small Screen */
 
-
-
 @media only screen and (max-width: 500px) {
-  *{
+  * {
     margin: 0;
     border: none;
-  overflow-x: hidden;
-  /* overflow: hidden; */
+    overflow-x: hidden;
+    /* overflow: hidden; */
 
     /* border: 2px solid blue; */
   }
-  .main{
+  .main {
     width: 100%;
   }
-  .link-array{
+  .link-array {
     display: none;
   }
-  .button-array{
+  .button-array {
     flex-direction: row;
     float: none;
     position: relative;
@@ -367,28 +387,27 @@ visibility: hidden;
     width: 80%;
     margin-top: 1rem;
   }
-  .navbar{
+  .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
     height: 100px;
-      /* border: 2px solid red; */
+    /* border: 2px solid red; */
   }
-  .headerLinkContainer{
-      /* border: 2px solid red; */
-      height: 50px;
+  .headerLinkContainer {
+    /* border: 2px solid red; */
+    height: 50px;
   }
-  .logo{
+  .logo {
     /* margin-bottom: 2rem; */
   }
-  .nav-item{
+  .nav-item {
     /* margin: 0px 1px 2px 3px; */
     background-position: 0 80%;
-  
   }
-  .pfp{
+  .pfp {
     margin-top: 4rem;
     /* border: 2px solid red; */
   }
@@ -397,79 +416,71 @@ visibility: hidden;
     flex-direction: column;
     padding: 1.6rem;
   }
-  .tech-container{
+  .tech-container {
     margin: 2rem;
   }
-  .tech-icon{
+  .tech-icon {
     width: 6rem;
-
   }
-  .fe-item{
+  .fe-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
   }
-  .be{
-    margin-bottom: 2rem;
-
-  }
-  .ds{
+  .be {
     margin-bottom: 2rem;
   }
-  .project-container{
+  .ds {
+    margin-bottom: 2rem;
+  }
+  .project-container {
     display: flex;
     flex-direction: column;
   }
-  .project-item{
+  .project-item {
     display: flex;
     flex-direction: column;
   }
-  .project-info{
+  .project-info {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .projects{
+  .projects {
     margin: 0;
   }
-  .link-container a{
+  .link-container a {
     margin: 1.6rem;
-  
   }
-  .link-container{
+  .link-container {
     width: 50%;
   }
-  .details p{
+  .details p {
     width: 80%;
     margin: 1.6rem;
   }
-  .details{
+  .details {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
   }
-  .mainFooter{
+  .mainFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .credits{
+  .credits {
     width: 55%;
   }
-  .sub-heading{
+  .sub-heading {
     font-size: 1.6rem;
     height: 3rem;
   }
-  .heading{
+  .heading {
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 10px;
   }
-
 }
-
-
-
-
