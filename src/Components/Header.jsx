@@ -1,12 +1,13 @@
-import React, { useEffect, useRef ,useState, Component } from "react";
+import React, { useEffect, useRef, useState, Component } from "react";
 import sunny from "../asset/sun.png";
 import night from "../asset/night.png";
 // import rain from "../asset/rain.png";
 // import winds from "../asset/wind.png";
-import "react-rain-animation/lib/style.css";
-
-
-
+import github from "../asset/github.png";
+import linkedin from "../asset/linkedin.png";
+import twitter from "../asset/twitter.png";
+import gmail from "../asset/mail.png";
+import leetcode from "../asset/leetcode.png";
 
 function Header() {
   const [theme, setTheme] = useState("sunny-theme");
@@ -29,11 +30,8 @@ function Header() {
   };
   // console.log(theme);
 
-  
-
   return (
     <div>
-     
       <div className="main">
         <div className="navbar">
           <div className="logo strong-font">
@@ -58,9 +56,25 @@ function Header() {
           </div>
         </div>
       </div>
+      <div className="link-array">
+        <a href="https://github.com/mukulbbhardwaj">
+          <img src={github} alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/mukulbbhardwaj/">
+          <img src={linkedin} alt="" />
+        </a>
+        <a href=""><img src={leetcode} alt="" /></a>
+        <a href="https://twitter.com/mukulbbhardwaj">
+          <img src={twitter} alt="" />
+        </a>
+        <a href="mailto:mukulbhardwaj73@gmail.com">
+          <img src={gmail} alt="" />
+        </a>
+      </div>
       <div className="button-array">
-        <button id="sunny" onClick={() => toggleSunny()}>
+        <button id="sunny tooltip" onClick={() => toggleSunny()}>
           <img src={sunny} alt="" />
+          <div className="tooltip-text">Sunny</div>
         </button>
         <button id="night" onClick={() => toggleNight()}>
           <img src={night} alt="" />
@@ -72,7 +86,6 @@ function Header() {
           <img src={winds} alt="" />
         </button> */}
       </div>
-    
     </div>
   );
 }

@@ -1,15 +1,10 @@
 import React from "react";
 import logo from "../asset/mb-logo.png";
-import html from "../asset/html.png";
-import css from "../asset/css.png";
-import js from "../asset/js.png";
-import node from "../asset/node.svg";
-import figma from "../asset/figma.png";
 import monkepod from "../asset/figma.png";
-import ramsetu from "../asset/figma.png";
+// import ramsetu from "../asset/figma.png";
 import muno from "../asset/muno.gif";
 import tictactoe from "../asset/tictactoe.gif"
-import react from "../asset/react.png"
+
 
 function Hero() {
   return (
@@ -31,39 +26,30 @@ function Hero() {
       </div>
       <div className="tech-container">
         <h1 className="heading">Technologies</h1>
-        <hr className="linebreak-1" />
         <div className="tech-info">
           <div className="fe">
             <h1 className="sub-heading">Frontend</h1>
             <div className="fe-item">
-              <li>
-                <img className="tech-icon" src={html} alt="" />
-              </li>
-              <li>
-                <img className="tech-icon" src={css} alt="" />
-              </li>
-              <li>
-                <img className="tech-icon" src={js} alt="" />
-              </li>
-              <li>
-                <img className="tech-icon" src={react} alt="" />
-              </li>
+              <div className="tech-icon">HTML</div>
+              <div className="tech-icon">CSS</div>
+              <div className="tech-icon">JavaScript</div>
+              <div className="tech-icon">ReactJS</div>
             </div>
           </div>
           <div className="be">
             <h1 className="sub-heading">Backend</h1>
-            <img className="tech-icon center" src={node} alt="" />
+            <div className="tech-icon">NodeJs</div>
           </div>
-          <div className="ds">
-            <h1 className="sub-heading">Designing</h1>
-            <img className="tech-icon" src={figma} alt="" />
+          <div className="tools">
+            <h1 className="sub-heading">Tools</h1>
+            <div className="tools-item"> <div className="tech-icon">Figma</div>
+            <div className="tech-icon">Git</div></div>
           </div>
         </div>
       </div>
 
       <div id="projects" className="projects">
         <h1 className="heading">Projects</h1>
-        <hr className="linebreak" />
         <div className="project-container">
           <div className="project-item">
             <div className="project-icon">
@@ -74,7 +60,7 @@ function Hero() {
               <div className="details">
                 <p>A custom music player build in ReactJs.</p>
                 <div className="link-container">
-                  <a  href="" target="_blank">
+                  <a href="" target="_blank">
                     Live
                   </a>
                   <a

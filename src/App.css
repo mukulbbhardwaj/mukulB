@@ -25,7 +25,6 @@
   font-size: 18px; 
   text-align: center;
   background-color: var(--bg-color);
-
   color: var(--primary-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -110,115 +109,112 @@ p {
 }
 
 .heading{
-  font-size: 1.8rem;
+  font-size: 6rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  transform: rotate(180deg);
   padding: 10px;
+  writing-mode: vertical-lr;
 
 }
 .sub-heading{
   font-size: 1.2rem;
-  background-color: var(--card-bg);
 }
 .tech-container{
   margin: 8rem;
-  /* margin-bottom: 2rem; */
+  box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+  border: 2px solid #fff;
+  filter: brightness(0.9);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+
   
 }
 .tech-info{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  list-style-type: none;
-  background-color: var(--card-bg);
   border-radius: 9px;
   padding: 4rem;
   margin-top: 2rem;
 }
 .tech-icon {
-  width: 3rem;
-  height: auto;
   margin: 1rem;
-  background-color: var(--card-bg);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 100%);
+  border: 2px solid #fff;
+  filter: brightness(0.9);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 500;
+ 
 }
-.fe{
-  /* display: flex; */
-  background-color: var(--card-bg);
-}
+
 .fe-item{
   display: flex;
-  background-color: var(--card-bg);
-  /* flex-direction: column; */
+ 
 }
 .be{
   display: flex;
   flex-direction: column;
     justify-content: center;
   align-items: center;
-  background-color: var(--card-bg);
 }
-.ds{
+.tools-item{
   display: flex;
-  flex-direction: column;
-    justify-content: center;
+  justify-content: center;
+}
+.tools{
+  justify-content: center;
   align-items: center;
-  background-color: var(--card-bg);
 }
-li{
-  background-color: var(--card-bg);
-}
+
 .projects{
   margin: 8rem;
-  margin-top: 4rem;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+  border: 2px solid #fff;
+  filter: brightness(0.9);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+
 }
 .project-container{
   
 }
 
 .project-item{
-display: flex;
-
-background-color: var(--card-bg);
-align-items: center;
-justify-content: center;
-margin: 1.6rem;
-border-radius: 9px;
-
+margin: 2rem;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+  border: 2px solid #fff;
+  filter: brightness(0.9);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
 }
-.project-icon{
-  background-color: var(--card-bg);
-}
+
 .project-icon img{ 
-/* border: 2px solid black; */
-/* border-radius: 50%; */
+
 width: 10rem;
 height: 10rem;
 margin: 1rem;
-background-color: var(--card-bg);
+
 }
 .project-info{
-  /* border: 2px solid black; */
+
   width: 24rem;
   margin-left: 1.6rem;
-  background-color: var(--card-bg);
+
 }
 .link-container a{
 text-decoration: none;
 margin-left: 1rem;
 border: 2px solid red;
-/* background-color: black; */
 border-radius: 9px;
-/* padding: 8px; */
+}
 
-
-}
-.link-container{
-  background-color: var(--card-bg);
-}
-.details{
-  text-align: justify;
-  background-color: var(--card-bg);
-}
-.details p{
-   background-color: var(--card-bg);
-}
 
 /* HERO CSS END */
 
@@ -272,7 +268,24 @@ width: 1.6rem;
 /*  */
 
 /*  */
-
+.link-array{
+   float: left;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--card-bg);
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 10px;
+  position: fixed;
+  left: 3%;
+}
+.link-array img{
+   width: 45px;
+  height: auto;
+  padding: 1px;
+   margin: 0.2rem;
+}
 
 .button-array{
   float: right;
@@ -299,8 +312,29 @@ background: none;
   width: 45px;
   height: auto;
 }
+.tooltip{
+    position: relative;
+  display: inline-block;
+}
+.tooltip:hover .tooltip-text{
+  visibility: visible;
+}
+.tooltip-text{
+visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+/* .tooltip-text{
 
+} */
 
 /*  */
 /*  */
@@ -319,6 +353,9 @@ background: none;
   }
   .main{
     width: 100%;
+  }
+  .link-array{
+    display: none;
   }
   .button-array{
     flex-direction: row;
