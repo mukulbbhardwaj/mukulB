@@ -548,16 +548,3 @@ background-color: var(--card-bg);
 }
 
 
-/* For Snapping Effect */
-@media only screen and (min-width: 1000px) {
-.section{
-  height: 100vh;
-  border: 2px solid red;
-  scroll-snap-align: start;
-}
-.superHero{
- scroll-snap-type: y mandatory;
- overflow-y: scroll;
-}
-
-}
