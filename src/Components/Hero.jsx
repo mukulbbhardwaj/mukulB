@@ -5,26 +5,32 @@ import monkepod from "../asset/figma.png";
 import muno from "../asset/muno.gif";
 import tictactoe from "../asset/tictactoe.gif";
 import weather from "../asset/weather.png"
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Hero() {
   return (
-    <div>
-      <div className="pfp">
-        <picture>
-          <img class="pfp-photo" src={logo} alt="" />
-        </picture>
-      </div>
-      <div className="intro">
-        <p>
-          Hello, I'm <strong className="strong-font">Mukul Bhardwaj</strong>, a
-          <strong className="strong-font"> self taught developer </strong>
-          who build products from scratch, design UI, engage with the community
-          and create content from
-          <strong className="strong-font"> India </strong>. Always up for
-          working on new ideas, learning new skills, technologies tools.
-        </p>
-      </div>
-      <div className="tech-container">
+    <div className="superHero">
+      <section className="section">
+        <Header/>
+        <div className="pfp">
+          <picture>
+            <img class="pfp-photo" src={logo} alt="" />
+          </picture>
+        </div>
+        <div className="intro">
+          <p>
+            Hello, I'm <strong className="strong-font">Mukul Bhardwaj</strong>,
+            a<strong className="strong-font"> self taught developer </strong>
+            who build products from scratch, design UI, engage with the
+            community and create content from
+            <strong className="strong-font"> India </strong>. Always up for
+            working on new ideas, learning new skills, technologies tools.
+          </p>
+        </div>
+      </section>
+      <section className="section">
+            <div className="tech-container">
         <h1 className="heading">Technologies</h1>
         <div className="tech-info">
           <div className="fe tech-container-item">
@@ -50,8 +56,10 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div id="projects" className="projects">
+     </section>
+  
+      <section className="section">
+         <div id="projects" className="projects">
         <h1 className="heading">Projects</h1>
         <div className="project-container">
           <div className="project-item p1">
@@ -68,10 +76,15 @@ function Hero() {
               </div>
             </div>
             <div className="link-container">
-              <a className="live btn" href="https://weather-app-monke.netlify.app/" target="_blank">
+              <a
+                className="live btn"
+                href="https://weather-app-monke.netlify.app/"
+                target="_blank"
+              >
                 Live
               </a>
-              <a className="code btn"
+              <a
+                className="code btn"
                 href="https://github.com/mukulbbhardwaj/Weather--React"
                 target="_blank"
               >
@@ -79,9 +92,10 @@ function Hero() {
               </a>
             </div>
           </div>
-          
         </div>
-      </div>
+        </div>
+        <Footer/>
+</section>
     </div>
   );
 }

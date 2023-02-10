@@ -10,8 +10,10 @@ import gmail from "../asset/mail.png";
 import leetcode from "../asset/leetcode.png";
 
 function Header() {
+  const resumeLink =
+    "https://drive.google.com/file/d/1AelzXCQ2ap2kKC7wchsHWUcTSSZLIsHo/view?usp=sharing";
   const [theme, setTheme] = useState("sunny-theme");
-
+  
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
@@ -41,7 +43,7 @@ function Header() {
           </div>
           <div className="headerLinkContainer">
             <a
-              href="https://docs.google.com/document/d/e/2PACX-1vR3_GeXIodKbixzFt0ZiNzNnmWi2fO3h0q1QoO7CfMAzA0nM7qFbr7B2EfXysAMWcNxJdraEAE3dRwx/pub"
+              href={resumeLink}
               target="_blank"
               className="nav-item "
             >
