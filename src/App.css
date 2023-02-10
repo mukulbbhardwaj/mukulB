@@ -224,6 +224,19 @@ box-shadow: 0 10px 30px #71717140;
   flex-wrap: wrap;
   background-color: var(--card-bg);
 }
+.tags-container{
+  display: flex;
+  background-color: var(--card-bg);
+}
+  .tags{
+    border: 2px solid black;
+    border-radius: 9px;
+    padding: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(50, 145, 164);
+  }
 .link-container {
 display: flex;
 flex-direction: column;
@@ -258,6 +271,7 @@ background-color: var(--card-bg);
   background-size: 4px 4px;
   background-color: var(--card-bg);
 }
+
 .code{
   color: green;
 }
@@ -417,6 +431,7 @@ background-color: var(--card-bg);
     margin-top: 1rem;
     overflow: hidden;
   }
+
   .navbar {
     display: flex;
     flex-direction: column;
@@ -527,6 +542,9 @@ background-color: var(--card-bg);
     align-items: center;
     margin: 0;
   }
+.tags-container{
+  visibility: hidden;
+}
   .mainFooter {
     display: flex;
     flex-direction: column;
