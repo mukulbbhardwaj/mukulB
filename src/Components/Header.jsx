@@ -11,7 +11,7 @@ import leetcode from "../asset/leetcode.png";
 
 function Header() {
   const resumeLink =
-    "https://drive.google.com/file/d/1AelzXCQ2ap2kKC7wchsHWUcTSSZLIsHo/view?usp=sharing";
+    "https://drive.google.com/file/d/1_GaM8fHMNrFqw0FhvxupZdtEuZ2a-Q_v/view?usp=share_link";
   const [theme, setTheme] = useState("sunny-theme");
   
   useEffect(() => {
